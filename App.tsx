@@ -1,14 +1,11 @@
 import React from 'react';
-
-import {View, Text, SafeAreaView, Button} from 'react-native';
+import {View, Text, SafeAreaView} from 'react-native';
 
 const App = () => {
   return (
     <SafeAreaView>
       <View>
-        <Text>Hello World!</Text>
-
-        <Button title="Hello World" />
+        <Text className="bg-slate-100">Hello World!</Text>
       </View>
     </SafeAreaView>
   );
