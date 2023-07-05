@@ -1,33 +1,19 @@
-import {
-  View,
-  Text,
-  SafeAreaView,
-  ScrollView,
-  FlatList,
-  StyleSheet,
-} from 'react-native';
+import {SafeAreaView, ScrollView, StyleSheet, View} from 'react-native';
 import React from 'react';
-import FlatCard from './components/FlatCard';
-import ElevetatedCard from './components/ElevetatedCard';
-import FancyCard from './components/FancyCard';
-import ActionCard from './components/ActionCard';
+import ChatBottomBar from './components/Chat/ChatBottomBar';
+import ChatCard from './components/Chat/ChatCard';
+import ChatHeader from './components/Chat/ChatHeader';
 
 const App = () => {
   return (
     <SafeAreaView>
-      <ScrollView style={styles.container}>
-        <FlatCard />
-        <ElevetatedCard />
-        <FancyCard />
-        <ActionCard />
-      </ScrollView>
+      <View className="h-screen">
+        <ChatHeader />
+        <ChatCard />
+        <ChatBottomBar />
+      </View>
     </SafeAreaView>
   );
 };
-const styles = StyleSheet.create({
-  container: {
-    padding: 10,
-  },
-});
 
 export default App;
